@@ -1,12 +1,11 @@
-//  Reaction array g65PXiD54SQVfVuDN15djm82P6BZCaNV <---- This is my own API key but, it didn't work. For the sake of displaying, I used the one from previous assignments.
-
+//  Reaction array 
 var reactions = ["Happy", "Sad", "Kiss", "LOL", "Yes", "No", "Wink", "Eye-Roll", "High-Five", "Shrug", "Thumbs-Up"];
 
 // Functions
 
 function displayGifs(){
     var reaction = $(this).attr("data-name");
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + reaction + "&api_key=dc6zaTOxFJmzC&limit=10";
+    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + reaction + "&api_key=g65PXiD54SQVfVuDN15djm82P6BZCaNV&limit=10";
     console.log(queryURL)
     $.ajax({
         url: queryURL,
