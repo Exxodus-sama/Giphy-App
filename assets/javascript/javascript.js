@@ -43,7 +43,7 @@ function createGifButtons(){
     for (var i = 0; i < reactions.length; i++){
         var gifButton = $("<button>");
         gifButton.addClass("reaction");
-        gifButton.addClass("btn btn-primary")
+        gifButton.addClass("btn btn-info")
         gifButton.attr("data-name", reactions[i]);
         gifButton.text(reactions[i]);
         $("#gif-buttons").append(gifButton);
